@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Səhifə - Django Laboratoriya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .lab-info {
+            background: #e8f4fc;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #3498db;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+        }
+        .feature h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            background: #764ba2;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Django Laboratoriya İşi №4</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px;">
+            Python Django freymvorku ilə statik veb səhifə hazırlanması
+        </p>
+        
+        <div class="lab-info">
+            <h2>🎯 Tapşırığın Məqsədi</h2>
+            <p>Django-da HTML şablonlarından istifadə edərək statik veb səhifə hazırlamaq və 
+            Model-View-Template (MVT) arxitekturası ilə tanış olmaq.</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h3>📁 HTML Şablon</h3>
+                <p>Laboratoriya №3-də hazırlanan HTML şablonun Django-da istifadəsi</p>
+            </div>
+            <div class="feature">
+                <h3>🔗 URL Konfiqurasiyası</h3>
+                <p>URL marşrutlaşdırma və view funksiyaları</p>
+            </div>
+            <div class="feature">
+                <h3>🎨 CSS Stilizasiya</h3>
+                <p>Responsiv və müasir CSS dizaynı</p>
+            </div>
+            <div class="feature">
+                <h3>🚀 Django Arxitekturası</h3>
+                <p>Model-View-Template (MVT) modelinin öyrənilməsi</p>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="/" class="btn">🏠 Əsas Səhifə</a>
+            <a href="/about/" class="btn">📖 Haqqında</a>
+            <a href="/fastfood/" class="btn">🍔 FastFood Sifariş</a>
+            <a href="/admin/" class="btn">⚙ Admin Panel</a>
+        </div>
+        
+        <footer>
+            <p>Python Django 5.2.7 | Laboratoriya İşi №4 | Statik Veb Səhifə</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Bu səhifə Django HTML template ilə hazırlanmışdır</p>
+        </footer>
+    </div>
+</body>
+</html>
